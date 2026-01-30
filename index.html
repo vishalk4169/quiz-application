@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Interactive Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- WELCOME SCREEN -->
+<div class="quiz-container" id="welcomeScreen">
+
+  <h1>Welcome to the Quiz</h1>
+  
+  <p>10 Questions • 10 Seconds Each</p>
+
+  <button id="startBtn" class="next-btn" style="display:block">
+    Start Quiz
+  </button>
+
+</div>
+
+<!-- QUIZ SCREEN -->
+<div class="quiz-container" id="quizScreen" style="display:none">
+
+  <h1>Interactive Quiz Challenge</h1>
+
+  <h2 id="question">Question text</h2>
+
+  <!-- TIMER (ADD HERE) -->
+  <div id="timer" class="timer"></div>
+
+  <div id="options" class="options"></div>
+
+  <p id="feedback"></p>
+
+  <button id="nextBtn" class="next-btn">Next</button>
+
+  <h3 id="score" class="score"></h3>
+
+</div>
+  <script src="app.js"></script>
+</body>
+</html>
